@@ -33,6 +33,7 @@ body {
 	line-height: 1.5;
 	letter-spacing: 0%;
 	color: var(--white-color#fff);
+	background-color: var(--dark-blue);
 }
 
 .container {
@@ -44,7 +45,38 @@ body {
 	padding-right: 20px;
 }
 
-.site-header {
+.btn {
+	font-family: var(--universal-fontFamily);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1;
+	letter-spacing: 0%;
+	border: 2px solid transparent;
+	color: var(--white-color);
+	background-color: var(--light-blue);
+	padding: 17px 37px;
+	border-radius: 35px;
+	transition: all 0.4s ease;
+}
+
+.btn:hover {
+	border: 2px solid var(--light-blue);
+	background-color: transparent;
+		cursor: pointer;
+}
+
+.btn:active {
+	opacity: 0.6;
+}
+
+.btn-active {
+	margin-left: 14px;
+	background-color: transparent;
+	border: 2px solid var(--light-blue);
+}
+
+.btn-active:hover {
+	background-color: var(--light-blue);
 }
 
 .site-header__top {
@@ -149,5 +181,76 @@ body {
 
 .site-header__link:active {
 	opacity: 0.6;
+}
 
+.hero {
+	padding-top: 291px;
+	padding-bottom: 310px;
+	background-image: url(../images/hero/hero-bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.hero__container {
+	display: flex;
+	align-items: center;
+}
+
+.hero__info {
+	max-width: 666px;
+	width: 100%;
+	margin-right: 20px;
+}
+.hero__info-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 31px;
+}
+.hero__info-title3 {
+	font-weight: 400;
+	font-size: 140px;
+	line-height: 180px;
+	letter-spacing: 0%;
+	color: rgba(255, 255, 255, 0.13);
+	margin-right: 25px;
+}
+
+.hero__info-line {
+	width: 3px;
+	height: 130px;
+	background-color: var(--light-blue);
+	margin-right: 25px;
+}
+.hero__info-title {
+	font-family: var(--title-fontfamily);
+	font-weight: 400;
+	font-size: 50px;
+	line-height: 110px;
+	letter-spacing: 0%;
+	color: var(--white-color);
+}
+
+.hero__info-title span {
+	color: var(--light-blue);
+}
+.hero__text {
+	margin-bottom: 59px;
+	color: var(--white-color);
+}
+
+.hero__img {
+	display: flex;
+	position: absolute;
+	right:0;
+	top: 32px;
+  bottom: 129px;
+}
+
+.hero__bg {
+	position: absolute;
+	top: 796px;
+	left: 0;
 }
